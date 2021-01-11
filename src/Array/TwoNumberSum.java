@@ -10,12 +10,11 @@ public class TwoNumberSum {
 		for(int i=0;i<array.length-1;i++)
 		{
 			int firstNum=array[i];
-			for(int j=1;j<array.length;j++)
+			for(int j=i+1;j<array.length;j++)
 			{
 				int secondNum=array[j];
 				if(firstNum!= secondNum && firstNum + secondNum == targetSum)
 				{
-					System.out.println(firstNum + secondNum);
 					return new int[] {firstNum,secondNum};
 				}
 			}
@@ -28,10 +27,10 @@ public class TwoNumberSum {
 	}
 	
 	public static void main(String[] args) {
-		int[] arr=new int[] {3,3};
+		int[] arr=new int[] {-2,8,11,15};
 		
 		
-		twoNumberSum(arr,6);
+		twoNumberSum(arr,9);
 
 	}
 
